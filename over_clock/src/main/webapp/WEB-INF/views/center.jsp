@@ -36,6 +36,9 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
     height: 27.3vmin;
     fill: #F6F6F6;
 }
+#new_el{width:300px; height:180px; border:1px solid gray; border-radius:10px; margin:5px auto; margin-top:50px; -webkit-transition-duration:0.5s; background-image:url("resources/news_img/부트 설명.png");}
+#new_el:hover{transform:scale(1.1)}
+
 </style>
 </head>
 
@@ -84,8 +87,22 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 
 	</div>
 </div>
-<div id="ff" style="height:2000px; width:100%;  overflow:hidden;  left:0;">
-<div style="width:100px; height:100px; transform:skew(25rad); border:1px solid gray;"></div>
+<div id="news" style="width:100%; height:500px; overflow:hidden;  left:0; border:1px solid gray;">
+	<div style="width:100%; height:150px; border-bottom:1px solid gray; line-height:150px;">
+		<span style="font-size:40px; font-weight:900;">주요소식</span>
+	</div>
+	<div style="width:100%; height:300px; border-bottom:1px solid gray;">
+		<div style="width:70%; border:1px solid gray; height:300px; margin:0 auto; display:flex; flex-direction:row;">
+			<div id="new_el">
+			</div>
+			<div id="new_el">
+			
+			</div>
+			<div id="new_el">
+			
+			</div>
+		</div>
+	</div>
 </div>
 
 </body>
