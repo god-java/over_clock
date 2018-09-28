@@ -12,8 +12,25 @@ div,body,html,video{margin:0px; padding:0px; outline:0px;}
 #header ul li{width:8%; height:30px; color:#D8D8D8; list-style:none;}
 </style>
 <script type="text/javascript">
-var scrollTop = document.scrollTop
-alert(scrollTop)
+
+	/* var scrollTop = window.scrollY
+	// document.scrollingElement.scrollTop 0
+	// document.documentElement.scrollTop 0
+	// document.body.scrollTop null
+	alert("¤¾¤¾" + scrollTop)
+	
+	var nav_loc = 0;
+	window.addEventListener('scroll', function() {		  
+		if(window.scrollY >= 100 && nav_loc == 0) {
+			alert(window.scrollY)
+			nav_loc = 1
+		}
+		
+		if(window.scrollY < 100 && nav_loc == 1) {
+			alert(window.scrollY)
+			nav_loc = 0
+		}
+	}); */
 </script>
 </head>
 <body>
