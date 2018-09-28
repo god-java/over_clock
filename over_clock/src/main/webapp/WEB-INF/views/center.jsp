@@ -11,7 +11,7 @@
 	var height = window.innerHeight
 	window.onload=function(){
 		document.getElementById("top").style.height = height+"px"
-		document.getElementById("ssss").style.height = height+'px'
+		document.getElementById("video_div").style.height = height+'px'
 
 
 
@@ -40,7 +40,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 </head>
 
 <body style="">
-<div id="ssss" style="overflow:hidden; position:relative; left:0;">
+<div id="video_div" style="overflow:hidden; position:relative; left:0;">
 	<div id="top" style="position:absolute; top:0; left:0; width:100%; overflow:hidden;">
 	<video id="vivi" style="width:100%;" autoplay="" loop="" muted="" poster="https://d3hmvhl7ru3t12.cloudfront.net/img/pages/home/header-video-poster-4d6f8aee9fd809779b1c36242f81c4c3d5afe3ef77a3d6bc3cd6248aab1980f89e80b41c14c56e5d5e4d06098f874b74d88a1932adf6e6f84da56dbcd8c10e72.jpg" data-js="header-video"><source src="https://d3hmvhl7ru3t12.cloudfront.net/video/pages/home/header-20316a38f7cfb65480e84592386095445e3ed800accf65f4d638a11b89ce9ce7d95c0062f9ab760b36963383893bed79f199013acc3b549c8bf320eb696be33c.webm" type="video/webm"><source src="https://d3hmvhl7ru3t12.cloudfront.net/video/pages/home/header-82b9abce067992beedde6d103b6241d616a7ee97cc0d4f3126277098c2e4b09004325f25c6a245656096bd333c880b0032e2cbdbed9d2514220e20718482e95b.mp4" type="video/mp4"></video>
 	<div style="width:100%; height:100%; position:absolute;">
@@ -82,7 +82,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	</div>
 	
 
-</div>
+	</div>
 </div>
 <div id="ff" style="height:2000px; width:100%;  overflow:hidden;  left:0;">
 <div style="width:100px; height:100px; transform:skew(25rad); border:1px solid gray;"></div>
