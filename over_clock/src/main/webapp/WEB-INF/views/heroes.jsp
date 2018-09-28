@@ -30,13 +30,16 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 .showcase_video.is_active{opacity:1; visibility:visible;}
 .hero_name{margin:0; display:block; text-transform:uppercase; white-space:normal; color:#f6f6f6; background:-webkit-linear-gradient(#F6F6F6 50%, rgba(246, 246, 246, 0.25)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:0.9; font-size:3.5vw; letter-spacing:0.5px;}
 .skill_name{margin:0; display:block; font-size:1.7vw; margin-top:0; color:#00c3ff;}
-.skill_button_list{list-style:none; padding:0; margin:0; display:block; margin-top:1.4hw;}
+.skill_button_list{list-style:none; padding:0; margin:0; display:block; margin-top:0.5rem;}
 .skill_button_list li{display:inline-block; margin:0 0.8hw; text-align:center;}
 .skill_btn{position:relative; width:5vw; height:5vw; cursor:pointer;}
+.skill_btn > .skill_icon{max-width:90%; max-height:65%; height:auto; opacity:0.7;}
 .skill_btn.is_active > .skill_icon, .skill_btn:hover > .skill_icon{opacity:1;}
+.skill_btn > .progress_svg{position:absolute; top:0; right:0; bottom:0; left:0; overflow:visible; fill:none; stroke:#00c3ff; stroke-width:4.5; stroke-dasharray:314; transforn:rotateZ(-90deg); opacity:0;}
+.skill_btn.is_active > .progress_svg, .skill_btn:hover > .progress_svg{opacity:1;}
 .sbt_bg_svg{postion:absolute; top:0; right:0; bottom:0; left:0; overflow:visible; fill:rgba(64, 82, 117, 0.4); stroke:rgba(246, 246, 246, 0.4); stroke-width:2;}
 .sbt_bg_svg.is_active{fill:rgba(64, 82, 117, 0.9); stroke:rgba(246, 246, 246, 0.9);}
-.skill_icon{max-width:90%; max-height:65%; height:auto; opacity:0.7;}
+.skill_icon{width:auto; position:absolute; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);}
 
 
 </style>
@@ -86,7 +89,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg velocity-animating" style="stroke-dashoffset: 263.049px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg velocity-animating" style="stroke-dashoffset: 263.049px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/icon-right-menu.png" class="skill_icon">
@@ -95,7 +98,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rocket-flail/icon-ability.png" class="skill_icon">
@@ -104,7 +107,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-repair-pack/icon-ability.png" class="skill_icon">
@@ -113,7 +116,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-whip-shot/icon-ability.png" class="skill_icon">
@@ -122,7 +125,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-barrier-shield/icon-ability.png" class="skill_icon">
@@ -131,7 +134,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-shield-bash/icon-ability.png" class="skill_icon">
@@ -140,7 +143,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
-								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress-svg" style="stroke-dashoffset: 314px;">
+								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="progress_svg" style="stroke-dashoffset: 314px;">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rally/icon-ability.png" class="skill_icon">
