@@ -27,6 +27,7 @@
 <style type="text/css">
 div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 .showcase_video{position:absolute; width:100%; top:0; left:0; opacity:0; visibility:none; transition:80ms opacity ease;}
+.showcase_video:first-child{opacity:1;}
 .showcase_video.is_active{opacity:1; visibility:visible;}
 </style>
 
@@ -72,22 +73,21 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	<script type="text/javascript">
 	var ss = document.getElementById("skill_showcase");
 	var sc_video = ss.getElementsByTagName("video");
-	
-	for (var i = 0; i < sc_video.length; i++){
+
+	 for (var i = 0; i < sc_video.length; i++){
 		if(i == 0) {
 			sc_video[i].classList.add("is_active");
 			sc_video[i].play();
 		} else{			
 			setInterval(function() {
-				alert("ㅎㅎ")
-				/* sc_video = ss.getElementsByTagName("video");
+				sc_video = ss.getElementsByTagName("video");
 				sc_video[i-1].classList.remove("is_active");
 				sc_video[i].classList.add("is_active");
-				sc_video[i].play(); */
+				sc_video[i].play();
 			}, 3000);
 		}
 		
-	}
+	} 
 </script>
 </body>
 </html>
