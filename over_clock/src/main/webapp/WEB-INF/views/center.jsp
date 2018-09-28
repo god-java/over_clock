@@ -23,7 +23,6 @@
 		document.getElementById("top").style.width = width+'px'
 		document.getElementById("top").style.height = height+"px"
 		document.getElementById("ff").style.width = width+'px'
-		
 	}
 
 
@@ -36,7 +35,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
     height: 27.3vmin;
     fill: #F6F6F6;
 }
-#new_el{width:300px; height:180px; border:1px solid gray; border-radius:10px; margin:5px auto; margin-top:50px; -webkit-transition-duration:0.5s; background-image:url("resources/news_img/부트 설명.png");}
+#new_el{width:300px; height:180px; border:1px solid gray; border-radius:10px; margin:5px auto; margin-top:50px; -webkit-transition-duration:0.5s; background-image:url("resources/news_img/부트 설명.png") no-repeat; background-s}
 #new_el:hover{transform:scale(1.1)}
 
 </style>
@@ -102,6 +101,9 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 			
 			</div>
 		</div>
+	</div>
+	<div style="width:100%; height:50px; line-height:50px;">
+		<button style="wit></button>
 	</div>
 </div>
 
