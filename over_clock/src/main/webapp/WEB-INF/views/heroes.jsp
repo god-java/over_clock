@@ -10,14 +10,19 @@
 	var height = window.innerHeight
 	window.onload=function(){
 		document.getElementById("video_div").style.width = '100vw'
-		document.getElementById("video_div").style.height = '56.25vw'
-		document.getElementById("skill_showcase").style.height = '56.25vw'
-	}/* 
+		document.getElementById("video_div").style.height = '45vw'
+		document.getElementById("skill_showcase").style.height = '45vw'
+		document.getElementsByClassName("showcase_video").style.top = '5vw'
+	}
 	
+	
+	
+	/*
 	window.onresize = function() {
 		document.getElementById("video_div").style.width = '100vw'
 		document.getElementById("video_div").style.height = '56.25vh'
-	} */
+	}
+	*/
 </script>
 <style type="text/css">
 div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
@@ -27,14 +32,16 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 
 </head>
 <body>
-	<div id="video_div" style="overflow:hidden; position:relative; left:0; width:100vw; height:56.25vw; background:yellowgreen;">
+
+	<div style="width:100%; overflow:hidden;">
+	<div id="video_div" style="overflow:hidden; position:relative; left:0; width:100vw; height:45vw; background:yellowgreen;">
 		<!-- <div id="skill_div" style="position:absolute; top:0; left:0; width:100%; overflow:hidden;"> -->
 			<div id="skill_showcase" style="position:absolute; top:0; left:0; width:100%; overflow:hidden; background:black;">
-				<video muted="muted" autoplay="" preload="none" class="showcase_video is_active">
+				<video muted="muted" preload="none" class="showcase_video">
 					<source type="video/webm" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/intro-video.webm">
 					<source type="video/mp4" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/intro-video.mp4">
 				</video>
-				<!-- <video muted="muted" poster="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rocket-flail/thumb-ability.jpg" preload="none" class="showcase_video is_active">
+				<video muted="muted" poster="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rocket-flail/thumb-ability.jpg" preload="none" class="showcase_video">
 					<source type="video/webm" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rocket-flail/video-ability.webm">
 					<source type="video/mp4" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rocket-flail/video-ability.mp4">
 				</video>
@@ -57,9 +64,30 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 				<video muted="muted" poster="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rally/thumb-ability.jpg" preload="none" class="showcase_video">
 					<source type="video/webm" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rally/video-ability.webm">
 					<source type="video/mp4" src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rally/video-ability.mp4">
-				</video> -->
+				</video>
 			</div>
 		<!-- </div> -->
 	</div>
+	</div>
+	<script type="text/javascript">
+	var ss = document.getElementById("skill_showcase");
+	var sc_video = ss.getElementsByTagName("video");
+	
+	for (var i = 0; i < sc_video.length; i++){
+		if(i == 0) {
+			sc_video[i].classList.add("is_active");
+			sc_video[i].play();
+		} else{			
+			setInterval(function() {
+				alert("ㅎㅎ")
+				/* sc_video = ss.getElementsByTagName("video");
+				sc_video[i-1].classList.remove("is_active");
+				sc_video[i].classList.add("is_active");
+				sc_video[i].play(); */
+			}, 3000);
+		}
+		
+	}
+</script>
 </body>
 </html>
