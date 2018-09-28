@@ -107,7 +107,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	</div>
 </div>
 <div style="background:black;">
-	<div style="width:100%; height:400px; background-size:cover; background-position:center top; opacity:0.7; background-image:url('resources/background/info_background.jpg'); text-aling:center; margin-top:100px; color:white;">
+	<div style="width:100%; height:500px; background-size:cover; background-position:center top; opacity:0.7; background-image:url('resources/background/info_background.jpg'); text-aling:center; margin-top:100px; color:white;">
 		<div style="width:100%; height:80%; position: relative; top:10%;">
 			<h1>미래를 위한 전투</h1>
 			<h2>군인. 과학자. 탐험가. 전문가.</h2>
@@ -121,8 +121,8 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 </div>
 <div style="position:relative; width:100%; height:1000px; background-image:url('resources/background/hero_body_background.jpg'); background-size:cover; background-position:top center;">
 	<div style="width:100%; height:200px; background:rgba(0,0,60,0.5); position:absolute; top:30%;">
-		<img src="resources/hero_img/d.va.png" style="width:500px; height:500px; position:absolute; top:-200px; left:350px;">
-		<div style="width:30%; height:80%; position:absolute; top:10%; left:70%; font-size:50px;">
+		<img src="resources/hero_img/d.va.png" style="width:500px; height:500px; position:absolute; top:-200px; left:20%;">
+		<div style="width:30%; height:80%; position:absolute; top:10%; left:70%; font-size:1vw;">
 			<h1>D.VA</h1>
 			<p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
 		</div>
