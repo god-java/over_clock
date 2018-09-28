@@ -14,9 +14,8 @@ div,body,html,video,span,li{margin:0px; padding:0px; outline:0px; text-align:cen
 
 <body id="body" style="height:auto;">
 <script type="text/javascript">
-<<<<<<< HEAD
 window.addEventListener('scroll', function(){
-	if(window.scrollY>300){
+	if(window.scrollY>100){
 		document.getElementById("header").style.top ='0';
 		document.getElementById("header").style.width ='100%';
 		document.getElementById("header").style.left ='0';
@@ -29,27 +28,7 @@ window.addEventListener('scroll', function(){
 	}
 })
 
-=======
 
-	/* var scrollTop = window.scrollY
-	// document.scrollingElement.scrollTop 0
-	// document.documentElement.scrollTop 0
-	// document.body.scrollTop null
-	alert("¤¾¤¾" + scrollTop)
-	
-	var nav_loc = 0;
-	window.addEventListener('scroll', function() {		  
-		if(window.scrollY >= 100 && nav_loc == 0) {
-			alert(window.scrollY)
-			nav_loc = 1
-		}
-		
-		if(window.scrollY < 100 && nav_loc == 1) {
-			alert(window.scrollY)
-			nav_loc = 0
-		}
-	}); */
->>>>>>> branch 'master' of https://github.com/god-java/over_clock
 </script>
 </head>
 	<div id="header">
