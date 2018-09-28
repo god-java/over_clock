@@ -11,6 +11,10 @@ div,body,html,video{margin:0px; padding:0px; outline:0px;}
 #header ul{width:100%; height:100%; display:flex; flex-direction:row;}
 #header ul li{width:8%; height:30px; color:#D8D8D8; list-style:none;}
 </style>
+<script type="text/javascript">
+var scrollTop = document.scrollTop
+alert(scrollTop)
+</script>
 </head>
 <body>
 	<div id="header">
