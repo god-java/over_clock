@@ -10,7 +10,7 @@
 	var width = window.innerWidth
 	var height = window.innerHeight
 	window.onload=function(){
-		document.getElementById("top").style.height = height+"px"
+		document.getElementById("top").style.height = 
 		document.getElementById("video_div").style.height = height+'px'
 
 
