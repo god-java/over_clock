@@ -155,6 +155,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	<script type="text/javascript">
 	var ss = document.getElementById("skill_showcase");
 	var sc_video = ss.getElementsByTagName("video");
+
 	
 	for (var i = 0; i < sc_video.length; i++) {
 		(function(x) {
@@ -182,17 +183,30 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	
 	
 	/* for (var i = 0; i < sc_video.length; i++){
+>>>>>>> branch 'master' of https://github.com/god-java/over_clock
 		if(i == 0) {
 			sc_video[i].classList.add("is_active");
 			sc_video[i].play();
 		} else{			
 			setInterval(function() {
+<<<<<<< HEAD
+=======
 				alert("ㅎㅎ")
+>>>>>>> branch 'master' of https://github.com/god-java/over_clock
 				sc_video = ss.getElementsByTagName("video");
 				sc_video[i-1].classList.remove("is_active");
 				sc_video[i].classList.add("is_active");
+<<<<<<< HEAD
+				sc_video[i].play();
+=======
 				sc_video[i].play(); 
+>>>>>>> branch 'master' of https://github.com/god-java/over_clock
 			}, 3000);
+<<<<<<< HEAD
+		}
+		
+	} 
+=======
 		}		
 	} */
 </script>

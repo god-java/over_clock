@@ -23,7 +23,6 @@
 		document.getElementById("top").style.width = width+'px'
 		document.getElementById("top").style.height = height+"px"
 		document.getElementById("ff").style.width = width+'px'
-		
 	}
 
 
@@ -36,7 +35,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
     height: 27.3vmin;
     fill: #F6F6F6;
 }
-#new_el{width:300px; height:180px; border:1px solid gray; border-radius:10px; margin:5px auto; margin-top:50px; -webkit-transition-duration:0.5s; background-image:url("resources/news_img/부트 설명.png");}
+#new_el{width:300px; height:180px; border:1px solid gray; border-radius:10px; margin:5px auto; margin-top:50px; -webkit-transition-duration:0.5s; background-image:url("resources/news_img/부트 설명.png") no-repeat; background-s}
 #new_el:hover{transform:scale(1.1)}
 
 </style>
@@ -87,12 +86,12 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 
 	</div>
 </div>
-<div id="news" style="width:100%; height:500px; overflow:hidden;  left:0; border:1px solid gray;">
-	<div style="width:100%; height:150px; border-bottom:1px solid gray; line-height:150px;">
+<div id="news" style="width:100%; height:500px; overflow:hidden;  left:0;">
+	<div style="width:100%; height:150px; line-height:150px;">
 		<span style="font-size:40px; font-weight:900;">주요소식</span>
 	</div>
-	<div style="width:100%; height:300px; border-bottom:1px solid gray;">
-		<div style="width:70%; border:1px solid gray; height:300px; margin:0 auto; display:flex; flex-direction:row;">
+	<div style="width:100%; height:300px;">
+		<div style="width:70%; height:300px; margin:0 auto; display:flex; flex-direction:row;">
 			<div id="new_el">
 			</div>
 			<div id="new_el">
@@ -103,7 +102,31 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 			</div>
 		</div>
 	</div>
+	<div style="width:100%; height:50px; line-height:50px;">
+		<button style="width:150px; height:40px; background:orange; border:1px solid orange; border-radius:2px; cursor:pointer; color:white;">새소식 모두보기</button>
+	</div>
 </div>
-
+<div style="background:black;">
+	<div style="width:100%; height:500px; background-size:cover; background-position:center top; opacity:0.7; background-image:url('resources/background/info_background.jpg'); text-aling:center; margin-top:100px; color:white;">
+		<div style="width:100%; height:80%; position: relative; top:10%;">
+			<h1>미래를 위한 전투</h1>
+			<h2>군인. 과학자. 탐험가. 전문가.</h2>
+			<p>국제 분쟁의 시대에 상처로 찢긴 세계를 구원하기 위해 영웅들로 구성된 다국적 특수 부대,<br> 오버워치가 결성되었습니다.</p>
+			<p>그들은 사태를 종식시켰고, 그 후 수십 년 동안 평화가 지속되며 탐험과 혁신, 발견의 시대가 이어졌습니다.<br> 그러나 시간이 흐르며 오버워치는 그 영향력을 서서히 잃었고, 마침내는 해체되기에 이르렀습니다.</p>
+			<p>그리고, 다시 분쟁으로 얼룩지기 시작한 세상을 구하기 위해, 예전 그리고 새로운<br> 영웅들이 부름을 받기 시작했습니다. 함께 하시겠습니까?</p>
+			<br>
+			<button style="width:150px; height:40px; background:orange; border:1px solid orange; border-radius:2px; cursor:pointer; color:white;">게임 살펴보기</button>
+		</div>
+	</div>
+</div>
+<div style="position:relative; width:100%; height:1000px; background-image:url('resources/background/hero_body_background.jpg'); background-size:cover; background-position:top center;">
+	<div style="width:100%; height:200px; background:rgba(0,0,60,0.5); position:absolute; top:30%;">
+		<img src="resources/hero_img/d.va.png" style="width:500px; height:500px; position:absolute; top:-200px; left:20%;">
+		<div style="width:30%; height:80%; position:absolute; top:10%; left:70%; font-size:1vw;">
+			<h1>D.VA</h1>
+			<p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
+		</div>
+	</div>
+</div>
 </body>
 </html>
