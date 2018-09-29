@@ -17,6 +17,14 @@ public class HeroDTO extends ObjectDTO {
 	private String hero_history;
 	private String hero_body_image;
 	private String hero_face_image;
+	private String hero_working_name;
+	
+	public String getHero_working_name() {
+		return hero_working_name;
+	}
+	public void setHero_working_name(String hero_working_name) {
+		this.hero_working_name = hero_working_name;
+	}
 	public String getHero_body_image() {
 		return hero_body_image;
 	}

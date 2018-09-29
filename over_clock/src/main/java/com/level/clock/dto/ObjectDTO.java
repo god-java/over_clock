@@ -34,6 +34,13 @@ public class ObjectDTO {
 	private String skill_video;
 	private String skill_image;
 	private String skil_info;
+	private String hero_working_name;
+	public String getHero_working_name() {
+		return hero_working_name;
+	}
+	public void setHero_working_name(String hero_working_name) {
+		this.hero_working_name = hero_working_name;
+	}
 	public int getCate_num() {
 		return cate_num;
 	}

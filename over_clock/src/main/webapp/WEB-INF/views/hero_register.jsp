@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
 #hero_register{width:100%; height:2000px;}
@@ -21,37 +22,41 @@
 		<form action="hero_register_ok" method="post" enctype="multipart/form-data">
 			<table id="register_table">
 				<tr>
-					<td id="left">¿µ¿õÀÌ¸§</td>
+					<td id="left">ì˜ì›…ì´ë¦„</td>
 					<td id="right"><input type="text" name="hero_name"></td>
 				</tr>	
 				<tr>
-					<td id="left">¿µ¿õ³ªÀÌ</td>
+					<td id="left">í™œë™ëª…</td>
+					<td id="right"><input type="text" name="hero_working_name"></td>
+				</tr>	
+				<tr>
+					<td id="left">ì˜ì›…ë‚˜ì´</td>
 					<td id="right"><input type="text" name="hero_age"></td>
 				</tr>
 				<tr>
-					<td id="left">Á÷¾÷</td>
+					<td id="left">ì§ì—…</td>
 					<td id="right"><input type="text" name="hero_job"></td>
 				</tr>	
 				<tr>
-					<td id="left">È°µ¿ ±Ù°ÅÁö</td>
+					<td id="left">í™œë™ ê·¼ê±°ì§€</td>
 					<td id="right"><input type="text" name="hero_base"></td>
 				</tr>	
 				<tr>
-					<td id="left">¼Ò¼Ó</td>
+					<td id="left">ì†Œì†</td>
 					<td id="right"><input type="text" name="hero_belong"></td>
 				</tr>	
 				<tr>
-					<td id="left">Æ÷Áö¼Ç</td>
+					<td id="left">í¬ì§€ì…˜</td>
 					<td id="right">
 						<select name="position_num">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>	
+							<c:forEach var="plist" items="${plist }">
+								<option value="${plist.position_num }">${plist.position_name }</option>
+							</c:forEach>
 						</select>
 					</td>
 				</tr>	
 				<tr>
-					<td id="left">³­ÀÌµµ</td>
+					<td id="left">ë‚œì´ë„</td>
 					<td id="right">
 						<select name="difficulty">
 							<option>1</option>
@@ -61,40 +66,40 @@
 					</td>
 				</tr>	
 				<tr>
-					<td id="left">¾ó±¼ ÀÌ¹ÌÁö</td>
+					<td id="left">ì–¼êµ´ ì´ë¯¸ì§€</td>
 					<td id="right"><input type="file" name="file"></td>
 				</tr>	
 				<tr>
-					<td id="left">¹Ùµð ÀÌ¹ÌÁö</td>
+					<td id="left">ë°”ë”” ì´ë¯¸ì§€</td>
 					<td id="right"><input type="file" name="file"></td>
 				</tr>	
 				<tr>
-					<td id="left">ÀÌ¹ÌÁö</td>
+					<td id="left">ì´ë¯¸ì§€</td>
 					<td id="right"><input type="file" name="file"></td>
 				</tr>	
 				<tr>
-					<td id="left">µ¿¿µ»ó</td>
+					<td id="left">ë™ì˜ìƒ</td>
 					<td id="right"><input type="file" name="file"></td>
 				</tr>	
 				<tr>
-					<td id="left">¼­ºêÁ¤º¸</td>
-					<td id="right"><input type="text" name="hero_sub_info"></td>
+					<td id="left">ì„œë¸Œì •ë³´</td>
+					<td id="right"><textarea name="hero_sub_info" style="height:200px; width:80%;"></textarea></td>
 				</tr>	
 				<tr>
-					<td id="left">¸ÞÀÎÁ¤º¸</td>
-					<td id="right"><input type="text" name="hero_main_info"></td>
+					<td id="left">ë©”ì¸ì •ë³´</td>
+					<td id="right"><textarea name="hero_main_info" style="height:300px; width:80%;"></textarea></td>
 				</tr>	
 				<tr>
-					<td id="left">¿µ¿õ¿ª»ç</td>
-					<td id="right"><input type="text" name="hero_history"></td>
+					<td id="left">ì˜ì›…ì—­ì‚¬</td>
+					<td id="right"><textarea name="hero_history" style="height:200px; width:80%;"></textarea></td>
 				</tr>	
-					<td id="left">¿µ¿õÀÇ ÇÑ¸¶µð</td>
+					<td id="left">ì˜ì›…ì˜ í•œë§ˆë””</td>
 					<td id="right"><input type="text" name="hero_talk"></td>
 				</tr>	
 				
 			</table>
 			<div style="width:1030px; height:50px; margin:0 auto; line-height:50px;">
-				<input type="submit" value="µî·Ï" style="width:100px; height:30px; background:orange; color:white; border:1px solid orange;">
+				<input type="submit" value="ë“±ë¡" style="width:100px; height:30px; background:orange; color:white; border:1px solid orange;">
 			</div>
 		</form>
 	</div>

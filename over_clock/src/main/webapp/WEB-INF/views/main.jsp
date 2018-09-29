@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
 div,body,html,video,span,li{margin:0px; padding:0px; outline:0px; text-align:center;}
@@ -36,10 +36,10 @@ window.addEventListener('scroll', function(){
 	<div id="header">
 		<ul>
 			<li><a href="#">OV</a></li>
-			<li><a href="#">°ÔÀÓ</a></li>
-			<li><a href="#">¼¥</a></li>
-			<li onclick="aaa()">»õ¼Ò½Ä</li>
-			<li><a href="hero_register">HEROµî·Ï</a></li>
+			<li><a href="#">ê²Œì„</a></li>
+			<li><a href="#">ìƒµ</a></li>
+			<li onclick="aaa()">ìƒˆì†Œì‹</li>
+			<li><a href="hero_register">HEROë“±ë¡</a></li>
 		</ul>
 	</div>
 	<div id="center">

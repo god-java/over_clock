@@ -2,9 +2,8 @@ package com.level.clock.controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.plaf.synth.SynthDesktopIconUI;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.level.clock.dao.HeroDAO;
+import com.level.clock.dao.PositionDAO;
 import com.level.clock.dto.HeroDTO;
+import com.level.clock.dto.PositionDTO;
 
 
 @Controller
@@ -24,6 +25,7 @@ public class HeroController {
 	@Autowired
 	private SqlSessionTemplate sst;
 	private HeroDAO hdao;
+	private PositionDAO pdao;
 	
 	@RequestMapping(value="/heroes")
 	public String Heroes(Model m) {
@@ -32,6 +34,9 @@ public class HeroController {
 	}
 	@RequestMapping(value="/hero_register")
 	public String hero_register(Model m) {
+		pdao = sst.getMapper(PositionDAO.class);
+		ArrayList<PositionDTO> plist = pdao.position_list();
+		m.addAttribute("plist", plist);
 		m.addAttribute("center","hero_register.jsp");
 		return "main";
 	}
