@@ -121,7 +121,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 </div>
 <div style="position:relative; width:100%; height:1000px; background-image:url('resources/background/hero_body_background.jpg'); background-size:cover; background-position:top center;">
 	<div style="width:100%; height:200px; background:rgba(0,0,60,0.5); position:absolute; top:30%;">
-		<img id="hero_body" src="resources/hero_img/d.va.png" style="width:500px; height:500px; position:absolute; top:-200px; left:20%;">
+		<img id="hero_body" src="resources/hero_img/d.va.png" style="-webkit-transition-duration:0.5s; width:500px; height:500px; position:absolute; top:-200px; left:20%;">
 		<div style="width:30%; height:80%; position:absolute; top:10%; left:70%; font-size:1vw;">
 			<h1 style="font-size:2vw;">D.VA</h1>
 			<p>최첨단 메카를 조종하여 조국을 수호하는 전 프로게이머</p>
@@ -129,9 +129,9 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	</div>
 	<div style="width:100%; height:400px; position:relative; top:70%;">
 		<div style="width:80%; height:80%; margin:0 auto; position:relative; top:10%;">
-			<div id="hero1" onmouseover="mouseov('d.va.png','1')" style="cursor:pointer; display:inline-block; width:80px; height:100px; margin:0 auto; background-image:url('resources/hero_face_img/d.va.png'); background-size:cover; background-position:top center; border:1px solid gray; border-radius:15px; transform:skew(25rad);">
+			<div id="hero1" onmouseover="mouseov('d.va.png','1')" style="-webkit-transition-duration:0.5s;cursor:pointer; display:inline-block; width:80px; height:100px; margin:0 auto; background-image:url('resources/hero_face_img/d.va.png'); background-size:cover; background-position:top center; border:1px solid gray; border-radius:15px; transform:skew(25rad);">
 			</div>
-			<div id="hero2" onmouseover="mouseov('orisa.png','2')" style="cursor:pointer; display:inline-block; width:80px; height:100px; margin:0 auto; background-image:url('resources/hero_face_img/orisa.png'); background-size:cover; background-position:top center; border:1px solid gray; border-radius:15px; transform:skew(25rad);">
+			<div id="hero"  asd="ffff" onmouseover="mouseov('orisa.png','2')" style="cursor:pointer; display:inline-block; width:80px; height:100px; margin:0 auto; background-image:url('resources/hero_face_img/orisa.png'); background-size:cover; background-position:top center; border:1px solid gray; border-radius:15px; transform:skew(25rad);">
 			</div>
 			<div id="hero3" onmouseover="mouseov('roadhog.png','3')" style="cursor:pointer; display:inline-block; width:80px; height:100px; margin:0 auto; background-image:url('resources/hero_face_img/roadhog.png'); background-size:cover; background-position:top center; border:1px solid gray; border-radius:15px; transform:skew(25rad);">
 			</div>
@@ -139,10 +139,14 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	</div>
 </div>
 <script type="text/javascript">
-function mouseov(evt,num){
+/* function mouseov(evt,num){
 	document.getElementById("hero_body").src="resources/hero_img/"+evt
-	
-}
+	document.getElementById("hero"+num).style.transform = "scale(1.5)"
+} */
+	document.getElementById("hero").addEventListener('click',function(evt){
+		var param = this.getAttribute("asd")
+		alert(param)
+	})
 </script>
 </body>
 </html>

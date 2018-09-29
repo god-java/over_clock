@@ -158,10 +158,14 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 	<script type="text/javascript">
 	var ss = document.getElementById("skill_showcase");
 	var sc_video = ss.getElementsByTagName("video");
-
-	
-	for (var i = 0; i < sc_video.length; i++) {
+var	j=0;
+var i=0;
+	setInterval(function(){
 		(function(x) {
+			if(i==sc_video.length){
+				j=0;
+			}
+			
 			if(i == 0) {
 				sc_video[i].classList.add("is_active");
 				sc_video[i].play();
@@ -174,10 +178,19 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 					console.log(2000*x)
 					sc_video[x].classList.add("is_active");
 					sc_video[x].play();
+					
 				}, 2000*x);
 			}			
 		})(i);
-	}
+		j++;
+		if(j>30000){
+			i=0;
+			j=0;
+		}
+	},10)
+	/* for (var i = 0; i < sc_video.length; i++) {
+		
+	} */
 		
 	/* for(){
 		await timer(3000);
