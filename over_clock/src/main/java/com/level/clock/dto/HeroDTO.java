@@ -15,6 +15,20 @@ public class HeroDTO extends ObjectDTO {
 	private String hero_sub_info;
 	private String hero_talk;
 	private String hero_history;
+	private String hero_body_image;
+	private String hero_face_image;
+	public String getHero_body_image() {
+		return hero_body_image;
+	}
+	public void setHero_body_image(String hero_body_image) {
+		this.hero_body_image = hero_body_image;
+	}
+	public String getHero_face_image() {
+		return hero_face_image;
+	}
+	public void setHero_face_image(String hero_face_image) {
+		this.hero_face_image = hero_face_image;
+	}
 	public int getHero_num() {
 		return hero_num;
 	}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.level.clock.dao.HeroDAO">
+	<insert id="hero_register" parameterType="com.level.clock.dto.HeroDTO">
+		insert into oc_hero values(oc_hero_seq.nextval,#{position_num},#{difficulty},#{hero_name},#{hero_age},#{hero_image},#{hero_video},#{hero_job},#{hero_base},#{hero_belong},#{hero_main_info},#{hero_sub_info},#{hero_talk},#{hero_history},#{hero_body_image},#{hero_face_image})
+	</insert>
+</mapper>

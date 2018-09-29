@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 <style type="text/css">
 div,body,html,video,span,li{margin:0px; padding:0px; outline:0px; text-align:center;}
+a{text-decoration:none; color:black;}
 #header{width:80%; height:50px; left:10%; top:30px; border-radius:10px; background:rgba(0,0,0,0.7); position:fixed; z-index:9999; border-bottom:1px solid rgba(0,0,0,0.1); -webkit-transition-duration:0.5s;}
 #header ul{width:100%; height:100%; display:flex; flex-direction:row;}
-#header ul li{width:8%; height:30px; color:#D8D8D8; list-style:none;}
+#header ul li{width:8%; height:30px; list-style:none;}
+#header a{color:#D8D8D8;}
 </style>
 
 <body id="body" style="height:auto;">
@@ -33,10 +35,11 @@ window.addEventListener('scroll', function(){
 </head>
 	<div id="header">
 		<ul>
-			<li>OV</li>
-			<li>게임</li>
-			<li>샵</li>
+			<li><a href="#">OV</a></li>
+			<li><a href="#">게임</a></li>
+			<li><a href="#">샵</a></li>
 			<li onclick="aaa()">새소식</li>
+			<li><a href="hero_register">HERO등록</a></li>
 		</ul>
 	</div>
 	<div id="center">

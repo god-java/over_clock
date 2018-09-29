@@ -112,7 +112,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-repair-pack/icon-ability.png" class="skill_icon">
 							</li>
-							<li data-ability-name="도리깨 투척" data-analytics="ability-showcase-video" data-hero-id="brigitte" data-hero-ability="whip-shot" class="skill_btn">
+							<!-- <li data-ability-name="도리깨 투척" data-analytics="ability-showcase-video" data-hero-id="brigitte" data-hero-ability="whip-shot" class="skill_btn">
 								<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" class="sbt_bg_svg">
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
@@ -147,7 +147,7 @@ div,body,html,video{margin:0px; padding:0px; outline:0px; left:0; top:0;}
 									<circle cx="50" cy="50" r="50"></circle>
 								</svg>
 								<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/ability-rally/icon-ability.png" class="skill_icon">
-							</li>
+							</li> -->
 						</ul>
 					</div>					
 				</div>
@@ -162,10 +162,17 @@ var	j=0;
 var i=0;
 	setInterval(function(){
 		(function(x) {
-			if(i==sc_video.length){
-				j=0;
-			}
 			
+			if(i==sc_video.length){
+				i=0;
+				alert("!!!")
+
+			}
+			if(j>2000){
+				i++;
+				j=0
+			}
+			j++;
 			if(i == 0) {
 				sc_video[i].classList.add("is_active");
 				sc_video[i].play();
@@ -180,13 +187,10 @@ var i=0;
 					sc_video[x].play();
 					
 				}, 2000*x);
-			}			
+			}	
+			
 		})(i);
-		j++;
-		if(j>30000){
-			i=0;
-			j=0;
-		}
+		
 	},10)
 	/* for (var i = 0; i < sc_video.length; i++) {
 		
